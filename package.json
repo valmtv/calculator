@@ -1,8 +1,8 @@
 {
-  "name": "omtv-template-react",
+  "name": "calculator",
   "version": "1.0.0",
-  "description": "react project template",
-  "author": "Oleh Matviiv",
+  "description": "basic calculator",
+  "author": "Valerij Matviiv",
   "license": "ISC",
   "main": "index.html",
   "scripts": {
