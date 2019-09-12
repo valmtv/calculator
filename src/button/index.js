@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-export const Num = () => {
+export const Num = ({value}) => {
   const conf = {
     "0": "num0",
     "1": "num1",
