@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
-Pannel
+  Button
+} from '../button';
+
+import {
+  Pannel
 } from '../pannel';
 
 const Body= styled.main`
@@ -20,6 +24,7 @@ const App = () => (
   <Body>
     <Div>
      <Pannel/>
+     <Button/>
     </Div>
   </Body>
 );

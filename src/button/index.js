@@ -2,9 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Body= styled.main`
+import {
+  Num1
+} from './num';
+
+const button = styled.div`
+  display: flex;
+  justify-content: center;
+
+`;
+const Div = styled.div`
+  background-color: black;
 `;
 
-const Button = () => (
+export const Button = () => (
+  <button>
+    <Div>
+     <Num1/>
+    </Div>
+  </button>
 );
-
