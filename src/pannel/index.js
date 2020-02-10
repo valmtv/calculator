@@ -6,6 +6,8 @@ const Pannel1= styled.nav`
   background-color: white;
   color: black;
   font-size: 50px;  
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export const Pannel = () => (
