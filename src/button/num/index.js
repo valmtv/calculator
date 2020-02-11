@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Num = styled.nav`
+const Num = styled.button`
   background-color: white;
   color: black;
   font-size: 50px;  
-  padding-right: 50px;
+  display: flex;
+  justify-content: center;
 `;
 
 

@@ -2,19 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Operation = styled.div`
+const Operation = styled.button`
   background-color: white;
   color: black;
   font-size: 50px;  
-  padding-right: 50px;
+  display: flex;
+  justify-content: center;
 `;
 
-const Equal1 = styled.div`
+const Equal1 = styled.button`
   background-color: white;
   color: black;
   font-size: 50px;  
-  padding-right: 50px;
-
+  display: flex;
+  justify-content: center;
 `;
 
 export const Opr1 = () => (
