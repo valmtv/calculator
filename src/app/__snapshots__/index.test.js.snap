@@ -2,7 +2,7 @@
 
 exports[`snapshots renders correclty 1`] = `
 <styled.main>
-  <Pannel />
+  <Input />
   <Controls />
 </styled.main>
 `;

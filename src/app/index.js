@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { Controls } from '../controls';
 
-import { Pannel } from '../pannel';
+import { Input } from '../input';
 
 const Main = styled.main`
   display: flex;
@@ -16,7 +16,7 @@ const Main = styled.main`
 
 const App = () => (
   <Main>
-    <Pannel />
+    <Input />
     <Controls />
   </Main>
 );
