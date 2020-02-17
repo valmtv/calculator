@@ -12,20 +12,16 @@ import {
 
 const Body= styled.main`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-
-`;
-const Div = styled.div`
   padding: 5px;
   background-color: black;
 `;
 
 const App = () => (
   <Body>
-    <Div>
-     <Pannel/>
-     <Button/>
-    </Div>
+    <Pannel/>
+    <Button/>
   </Body>
 );
 export default App;
