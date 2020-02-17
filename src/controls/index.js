@@ -12,11 +12,6 @@ import {
   Num6, Num7, Num8, Num9, Num0
 } from './num';
 
-const button = styled.div`
-  display: flex;
-  justify-content: center;
-
-`;
 const Div = styled.div`
   background-color: black;
   display: grid;
@@ -27,28 +22,26 @@ const Div = styled.div`
                        "Opr1 Num0 Opr2 Equal";
 `;
 
-export const Button = () => (
-  <button>
-    <Div>
-     <Opr8/>
-     <Opr7/>
-     <Opr6/>
-     <Opr5/>
-     <Num9/>
-     <Num8/>
-     <Num7/>
-     <Opr4/>
-     <Num6/>
-     <Num5/>
-     <Num4/>
-     <Opr3/>
-     <Num3/>
-     <Num2/>
-     <Num1/>
-     <Equal/>
-     <Opr1/>
-     <Num0/>
-     <Opr2/>
-    </Div>
-  </button>
+export const Controls = () => (
+  <Div>
+    <Opr8/>
+    <Opr7/>
+    <Opr6/>
+    <Opr5/>
+    <Num9/>
+    <Num8/>
+    <Num7/>
+    <Opr4/>
+    <Num6/>
+    <Num5/>
+    <Num4/>
+    <Opr3/>
+    <Num3/>
+    <Num2/>
+    <Num1/>
+    <Equal/>
+    <Opr1/>
+    <Num0/>
+    <Opr2/>
+  </Div>
 );

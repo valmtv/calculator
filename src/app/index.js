@@ -2,15 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import {
-  Button
-} from '../button';
+import { Controls } from '../controls';
 
-import {
-  Pannel
-} from '../pannel';
+import { Pannel } from '../pannel';
 
-const Body= styled.main`
+const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,9 +15,9 @@ const Body= styled.main`
 `;
 
 const App = () => (
-  <Body>
-    <Pannel/>
-    <Button/>
-  </Body>
+  <Main>
+    <Pannel />
+    <Controls />
+  </Main>
 );
 export default App;
