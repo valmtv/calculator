@@ -10,6 +10,6 @@ const Button = styled.button`
   justify-content: center;
 `;
 
-export const Num = (props) => (
-  <Button>{props.name}</Button>
+export const Num = ({ name }) => (
+  <Button>{name}</Button>
 );
