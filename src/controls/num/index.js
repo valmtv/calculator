@@ -11,8 +11,17 @@ const Button = styled.button`
   justify-content: center;
 `;
 
-export const Num = ({ name }) => (
-  <Button area={name}>
-    {name}
-  </Button>
-);
+export const Num = ({ name }) => {
+  const onClick = e =>
+    console.log('somebody clicked on Num component', e.target.value);
+
+  return (
+    <Button
+      area={name}
+      value={name}
+      onClick={onClick}
+    >
+      {name}
+    </Button>
+  );
+};
