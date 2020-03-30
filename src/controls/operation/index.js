@@ -17,7 +17,7 @@ export const Opr = ({value, name}) => {
   return(
     <Operation
       area={name}
-      value={name}
+      value={value}
       onClick={onClick}
     >
       {value}
