@@ -10,7 +10,7 @@ const Div = styled.div`
   justify-content: flex-end;
 `;
 
-export const Input = () => (
-  <Div>2+45=47</Div>
+export const Input = ({ value }) => (
+  <Div>{ value }</Div>
 );
 

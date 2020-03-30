@@ -16,26 +16,24 @@ const Div = styled.div`
                        'percent Num0   point equal';
 `;
 
-export const Controls = () => (
-  <Div>
-    <Opr value='/' name='divide'/>
-    <Opr value='+' name='plus'/>
-    <Opr value='=' name='equal'/>
-    <Opr value='-' name='minus'/>
-    <Opr value='%' name='percent'/>
-    <Opr value='Del' name='delete'/>
-    <Opr value='X' name='multi'/>
-    <Opr value='C' name='cancel'/>
-    <Opr value=',' name='point'/>
-    <Num name='0' />
-    <Num name='1' />
-    <Num name='2' />
-    <Num name='3' />
-    <Num name='4' />
-    <Num name='5' />
-    <Num name='6' />
-    <Num name='7' />
-    <Num name='8' />
-    <Num name='9' />
-  </Div>
-);
+export const Controls = ({ onInput }) => <Div>
+  <Opr value='/' name='divide'/>
+  <Opr value='+' name='plus'/>
+  <Opr value='=' name='equal'/>
+  <Opr value='-' name='minus'/>
+  <Opr value='%' name='percent'/>
+  <Opr value='Del' name='delete'/>
+  <Opr value='X' name='multi'/>
+  <Opr value='C' name='cancel'/>
+  <Opr value=',' name='point'/>
+  <Num name='0' onNumClick={onInput} />
+  <Num name='1' onNumClick={onInput} />
+  <Num name='2' onNumClick={onInput} />
+  <Num name='3' onNumClick={onInput} />
+  <Num name='4' onNumClick={onInput} />
+  <Num name='5' onNumClick={onInput} />
+  <Num name='6' onNumClick={onInput} />
+  <Num name='7' onNumClick={onInput} />
+  <Num name='8' onNumClick={onInput} />
+  <Num name='9' onNumClick={onInput} />
+</Div>;

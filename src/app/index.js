@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -14,10 +14,16 @@ const Main = styled.main`
   background-color: black;
 `;
 
-const App = () => (
-  <Main>
-    <Input />
-    <Controls />
-  </Main>
-);
+const App = () => {
+  const [{ input }, setInput] = useState({ input: '0' });
+
+  const handleInput = inpt => setInput({
+    input: parseInt(input + inpt),
+  });
+
+  return <Main>
+    <Input value={input} />
+    <Controls onInput={handleInput} />
+  </Main>;
+};
 export default App;
