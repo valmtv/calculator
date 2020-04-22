@@ -20,10 +20,14 @@ const App = () => {
   const handleInput = inpt => setInput({
     input: parseInt(input + inpt),
   });
+  const clearInput = () => setInput({ input: '0' });
 
   return <Main>
     <Input value={input} />
-    <Controls onInput={handleInput} />
+    <Controls
+      clearInput={clearInput}
+      onInput={handleInput}
+    />
   </Main>;
 };
 export default App;

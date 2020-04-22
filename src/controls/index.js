@@ -16,13 +16,13 @@ const Div = styled.div`
                        'percent Num0   point equal';
 `;
 
-export const Controls = ({ onInput }) => <Div>
+export const Controls = ({ onInput, clearInput }) => <Div>
   <Opr value='/' name='divide'/>
   <Opr value='+' name='plus'/>
   <Opr value='=' name='equal'/>
   <Opr value='-' name='minus'/>
-  <Opr value='%' name='percent'/>
-  <Opr value='Del' name='delete'/>
+  <Opr value='%' name='percent'/> 
+  <Opr value='Del' name='delete' onOprClick={clearInput}/>
   <Opr value='X' name='multi'/>
   <Opr value='C' name='cancel'/>
   <Opr value=',' name='point'/>

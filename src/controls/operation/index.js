@@ -11,14 +11,16 @@ const Operation = styled.button`
   justify-content: center;
 `;
 
-export const Opr = ({value, name}) => { 
-  const onClick = e =>
-    console.log('somebody clicked on Operation component', e.target.value)
-  return(
+export const Opr = ({
+  value,
+  name,
+  onOprClick,
+}) => { 
+  return (
     <Operation
       area={name}
       value={value}
-      onClick={onClick}
+      onClick={onOprClick}
     >
       {value}
     </Operation>
