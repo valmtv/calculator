@@ -15,18 +15,31 @@ const Main = styled.main`
 `;
 
 const App = () => {
-  const [{ input }, setInput] = useState({ input: '0' });
+  const [{ whole }, setWhole] = useState({ whole: '0' });
+  const [{ isWhole }, setIsWhole] = useState({ isWhole: true });
+  const [{ fract }, setFract] = useState({ fract: '0' });
 
-  const handleInput = inpt => setInput({
-    input: parseInt(input + inpt),
+  const handleInput = inpt => isWhole
+    ? setWhole({ whole: parseInt(whole + inpt) })
+    : setFract({ fract: parseInt(fract + inpt) });
+
+  const handleComma = () => setIsWhole({
+    isWhole: !isWhole,
   });
-  const clearInput = () => setInput({ input: '0' });
+
+  const clearInput = () => setWhole({ whole: '0' });
+
+  const handleOprClick = (e) => {
+    switch (e.target.value) {
+      case 'Del' : clearInput(); break;
+    };
+  };
 
   return <Main>
-    <Input value={input} />
+    <Input value={whole + ',' + fract} />
     <Controls
-      clearInput={clearInput}
       onInput={handleInput}
+      onOprClick={handleOprClick}
     />
   </Main>;
 };

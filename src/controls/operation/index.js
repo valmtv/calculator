@@ -15,14 +15,12 @@ export const Opr = ({
   value,
   name,
   onOprClick,
-}) => { 
-  return (
-    <Operation
-      area={name}
-      value={value}
-      onClick={onOprClick}
-    >
-      {value}
-    </Operation>
-  );
-};
+}) => (
+  <Operation
+    area={name}
+    value={value}
+    onClick={onOprClick}
+  >
+    {value}
+  </Operation>
+);
