@@ -23,15 +23,15 @@ const App = () => {
     ? setWhole({ whole: parseInt(whole + inpt) })
     : setFract({ fract: parseInt(fract + inpt) });
 
+  const clearInput = () => setWhole({ whole: '0' });
   const handleComma = () => setIsWhole({
     isWhole: !isWhole,
   });
 
-  const clearInput = () => setWhole({ whole: '0' });
-
   const handleOprClick = (e) => {
     switch (e.target.value) {
       case 'Del' : clearInput(); break;
+      case ',' : handleComma(); break;
     };
   };
 
