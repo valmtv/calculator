@@ -23,7 +23,11 @@ const App = () => {
     ? setWhole({ whole: parseInt(whole + inpt) })
     : setFract({ fract: parseInt(fract + inpt) });
 
-  const clearInput = () => setWhole({ whole: '0' });
+  const clearInput = () => {
+    setWhole({ whole: '0' })
+    setFract({ fract: '0'});
+  };
+
   const handleComma = () => setIsWhole({
     isWhole: !isWhole,
   });
