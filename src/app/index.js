@@ -43,6 +43,24 @@ const App = () => {
 //  const handleC = 
 //  const handleC = () => console.log(whole.slice(0, n-1));
 
+  const handleDivide = () => {
+    setOprName({ oprName: '/' });
+    setUpperInput({ upperInput: whole + ',' + fract });
+    clearInput();
+  };
+
+  const handlePlus = () => {
+    setOprName({ oprName: '+' });
+    setUpperInput({ upperInput: whole + ',' + fract });
+    clearInput();
+  };
+
+  const handleMinus = () => {
+    setOprName({ oprName: '-' });
+    setUpperInput({ upperInput: whole + ',' + fract });
+    clearInput();
+  };
+
   const handleMulti = () => {
     setOprName({ oprName: '*' });
     setUpperInput({ upperInput: whole + ',' + fract });
@@ -57,6 +75,9 @@ const App = () => {
       case '%' : handlePercent(); break;
       case 'C' : handleC(); break;
       case 'X' : handleMulti(); break;
+      case '-' : handleMinus(); break;
+      case '+' : handlePlus(); break;
+      case '/' : handleDivide(); break;
       case '=' : handleEqual(); break;
     };
   };
