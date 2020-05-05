@@ -14,3 +14,10 @@ export const Input = ({ value }) => (
   <Div>{ value }</Div>
 );
 
+export const OprInput = ({ value }) => (
+  <Div>{ value }</Div>
+);
+
+export const UpperInput = ({ value }) => (
+  <Div>{ value }</Div>
+);

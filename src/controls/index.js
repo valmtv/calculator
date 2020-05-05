@@ -16,24 +16,34 @@ const Div = styled.div`
                        'percent Num0   point equal';
 `;
 
-export const Controls = ({ onInput, onOprClick }) => <Div>
-  <Opr value='/' name='divide' onOprClick={onOprClick} />
-  <Opr value='+' name='plus' onOprClick={onOprClick} />
-  <Opr value='=' name='equal' onOprClick={onOprClick} />
-  <Opr value='-' name='minus' onOprClick={onOprClick} />
-  <Opr value='%' name='percent' onOprClick={onOprClick} /> 
-  <Opr value='Del' name='delete' onOprClick={onOprClick} />
-  <Opr value='X' name='multi' onOprClick={onOprClick} />
-  <Opr value='C' name='cancel' onOprClick={onOprClick} />
-  <Opr value=',' name='point' onOprClick={onOprClick} />
-  <Num name='0' onNumClick={onInput} />
-  <Num name='1' onNumClick={onInput} />
-  <Num name='2' onNumClick={onInput} />
-  <Num name='3' onNumClick={onInput} />
-  <Num name='4' onNumClick={onInput} />
-  <Num name='5' onNumClick={onInput} />
-  <Num name='6' onNumClick={onInput} />
-  <Num name='7' onNumClick={onInput} />
-  <Num name='8' onNumClick={onInput} />
-  <Num name='9' onNumClick={onInput} />
-</Div>;
+export const Controls = ({
+  onInput,
+  onOprClick,
+  commaIsActive,
+}) => {
+  const color = commaIsActive ? 'red' : 'white';
+
+  return (
+    <Div>
+      <Opr value='/' name='divide' onOprClick={onOprClick} />
+      <Opr value='+' name='plus' onOprClick={onOprClick} />
+      <Opr value='=' name='equal' onOprClick={onOprClick} />
+      <Opr value='-' name='minus' onOprClick={onOprClick} />
+      <Opr value='%' name='percent' onOprClick={onOprClick} /> 
+      <Opr value='Del' name='delete' onOprClick={onOprClick} />
+      <Opr value='X' name='multi' onOprClick={onOprClick} />
+      <Opr value='C' name='cancel' onOprClick={onOprClick} />
+      <Opr value=',' name='point' color={color} onOprClick={onOprClick} />
+      <Num name='0' onNumClick={onInput} />
+      <Num name='1' onNumClick={onInput} />
+      <Num name='2' onNumClick={onInput} />
+      <Num name='3' onNumClick={onInput} />
+      <Num name='4' onNumClick={onInput} />
+      <Num name='5' onNumClick={onInput} />
+      <Num name='6' onNumClick={onInput} />
+      <Num name='7' onNumClick={onInput} />
+      <Num name='8' onNumClick={onInput} />
+      <Num name='9' onNumClick={onInput} />
+    </Div>
+  );
+};
